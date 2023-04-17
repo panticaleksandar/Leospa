@@ -1,0 +1,64 @@
+.procedures {
+  &__sec-title {
+    color: $h-color;
+    font-size: 33px;
+    margin-bottom: 32px;
+  }
+
+  &__desc {
+    color: $p-color;
+    margin-bottom: 0;
+  }
+
+  &__post {
+    border: 1px solid $border-color;
+    margin-bottom: 30px;
+    margin-top: 70px;
+    padding: 20px;
+    text-align: center;
+
+    &:hover {
+      box-shadow: 0 5px 20px $box-shadow-color;
+    }
+
+    > img {
+      margin-bottom: 35px;
+      width: 100%;
+    }
+
+    &__heading {
+      a {
+        color: $link-color;
+        font-size: 22px;
+      }
+    }
+
+    &__desc {
+      color: $p-color;
+      margin-bottom: 40px;
+    }
+
+    &__btn {
+      background-color: $btn-color;
+      border: 0;
+      border-radius: 50px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+
+      &:hover {
+        background-color: $procedures-btn-hover-color;
+        color: $bg-color !important;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .procedures {
+    &__sec-title {
+      font-size: 42px;
+      margin-bottom: 32px;
+    }
+  }
+}

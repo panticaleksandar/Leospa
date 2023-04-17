@@ -1,0 +1,69 @@
+.main-footer {
+  background-color: $carousel-color;
+  margin-top: 50px;
+  padding: 80px 0 60px;
+
+  &__nav {
+    display: none;
+  }
+
+  &__social {
+    margin: 30px 0;
+
+    li {
+      display: inline-block;
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+
+      a {
+        @include socnet(cover, block, 40px, -9999px, 0.3s, 40px);
+
+        &.fb {
+          background-image: url("../images/social/facebook.png");
+        }
+
+        &.tw {
+          background-image: url("../images/social/twitter.png");
+        }
+
+        &.yt {
+          background-image: url("../images/social/youtube.png");
+        }
+
+        &.in {
+          background-image: url("../images/social/instagram.png");
+        }
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(min-width: 768px) {
+  .main-footer__nav {
+    display: block;
+    margin-top: 30px;
+
+    li {
+      display: inline-block;
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+
+      a {
+        color: $link-color;
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 0 20px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

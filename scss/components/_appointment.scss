@@ -1,0 +1,58 @@
+.appointment {
+  background-color: $carousel-color;
+  display: flex;
+  justify-content: space-around;
+
+  &__img {
+    display: none;
+  }
+
+  &__appointment-form {
+    &--input-field {
+      background-color: transparent;
+      border: 0;
+      border-bottom: 1px solid $border-bottom-color;
+      color: $input-field-color;
+      display: block;
+      font-size: 12px;
+      font-weight: 500;
+      margin-bottom: 30px;
+      padding: 10px 0;
+      text-transform: uppercase;
+      width: 100%;
+    }
+
+    &__btn {
+      @include button(
+        $btn-color,
+        1px solid $btn-color,
+        50px,
+        20px 15px,
+        none,
+        uppercase
+      );
+      display: flex;
+      font-weight: 600;
+      margin: 0 auto;
+
+      &:hover {
+        background-color: $bg-color;
+        border-color: $btn-color;
+        color: $btn-color;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .appointment {
+    &__img {
+      display: block;
+    }
+
+    .col-md-6 {
+      padding-left: 0;
+    }
+  }
+}

@@ -1,0 +1,78 @@
+.banner {
+  background-image: url("../../images/banner/leaf.png");
+  background-position-x: left;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: 12.5%;
+  padding: 8% 0;
+  position: relative;
+
+  &__spa-image {
+    display: none;
+  }
+
+  &__title {
+    @include title($btn-color, "Rufina", 400, 1.5px, 20px, uppercase);
+  }
+
+  &__heading {
+    color: $h-color;
+    font-size: $heading-size;
+    line-height: 60px;
+    margin-top: 25px;
+  }
+
+  &__desc {
+    color: $p-color;
+    margin-bottom: 50px;
+    margin-top: 17px;
+  }
+
+  &__btn {
+    @include button(
+      $btn-color,
+      1px solid $btn-color,
+      50px,
+      15px 10px,
+      none,
+      uppercase
+    );
+    &:hover {
+      background-color: $bg-color;
+      border-color: $btn-color;
+      color: $btn-color;
+      text-decoration: none;
+    }
+  }
+
+  &__video-btn {
+    color: $text-color;
+    font-size: 11px;
+    margin-left: 15px;
+
+    &:hover {
+      color: $btn-color;
+    }
+
+    &__title-play {
+      @include title($btn-color, "Rufina", 400, 1.5px, 20px, uppercase);
+      font-size: 15px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner {
+    &__spa-image {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: -103px;
+      width: 43.4%;
+    }
+  }
+}

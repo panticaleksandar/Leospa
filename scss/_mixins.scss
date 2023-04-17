@@ -1,0 +1,40 @@
+@mixin title(
+  $color,
+  $font-family,
+  $font-weight,
+  $letter-spacing,
+  $margin-bottom,
+  $text-transform
+) {
+  color: $color;
+  font-family: $font-family;
+  font-weight: $font-weight;
+  letter-spacing: $letter-spacing;
+  margin-bottom: $margin-bottom;
+  text-transform: $text-transform;
+}
+
+@mixin button(
+  $bg-color,
+  $border,
+  $border-radius,
+  $padding,
+  $text-decoration,
+  $text-transform
+) {
+  background-color: $bg-color;
+  border: $border;
+  border-radius: $border-radius;
+  padding: $padding;
+  text-decoration: $text-decoration;
+  text-transform: $text-transform;
+}
+
+@mixin socnet($bg-size, $display, $height, $text-indent, $transition, $width) {
+  background-size: $bg-size;
+  display: $display;
+  height: $height;
+  text-indent: $text-indent;
+  transition: $transition;
+  width: $width;
+}

@@ -1,0 +1,87 @@
+.team {
+  &__section-heading {
+    margin-bottom: 70px;
+
+    &__sec-title {
+      color: $h-color;
+      font-weight: 800;
+      margin-bottom: 32px;
+    }
+
+    &__desc {
+      color: $p-color;
+      margin-bottom: 0;
+    }
+  }
+
+  &__single-memb {
+    margin-bottom: 30px;
+
+    > img {
+      height: auto;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+
+    &__memb-info {
+      background-color: $bg-color;
+      box-shadow: 0 5px 20px $box-shadow-color;
+      cursor: pointer;
+      padding-top: 20px 15px;
+
+      &:hover {
+        ul {
+          visibility: visible;
+        }
+      }
+
+      h6 {
+        color: $link-color;
+        font-size: 22px;
+        margin-bottom: 0;
+      }
+
+      span {
+        display: block;
+        margin-bottom: 15px;
+      }
+
+      &--memb-social {
+        padding-bottom: 15px;
+        visibility: hidden;
+
+        li {
+          display: inline-block;
+
+          &:not(:last-child) {
+            margin-right: 10px;
+          }
+
+          a {
+            @include socnet(cover, block, 40px, -9999px, 0.3s, 40px);
+
+            &.fb {
+              background-image: url("../images/social/facebook.png");
+            }
+
+            &.in {
+              background-image: url("../images/social/instagram.png");
+            }
+
+            &.tw {
+              background-image: url("../images/social/twitter.png");
+            }
+
+            &.yt {
+              background-image: url("../images/social/youtube.png");
+            }
+
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+    }
+  }
+}

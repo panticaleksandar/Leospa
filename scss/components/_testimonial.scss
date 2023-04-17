@@ -1,0 +1,47 @@
+.testimonial {
+  background-color: $carousel-color;
+  text-align: center;
+
+  .single-tst {
+    > img {
+      margin: 0 auto 45px;
+    }
+
+    p {
+      color: $link-color;
+      font-family: "Rufina", serif;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 35px;
+      margin-bottom: 43px;
+    }
+
+    .client-info {
+      > img {
+        border-radius: 50px;
+        height: 76px;
+        margin-bottom: 22px;
+        width: 76px;
+      }
+
+      p {
+        font-size: 22px;
+        margin-bottom: 0;
+
+        span {
+          display: inline-block;
+          font-size: 15px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .carousel-indicators {
+    margin-bottom: 30px;
+
+    .carousel-btn {
+      background-color: $btn-color;
+    }
+  }
+}
